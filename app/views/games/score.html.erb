@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row col-12 center mx-auto">
+    <h1>Result</h1>
+
+    <p><%= @message %></p>
+
+    <form action="/new" data-turbo="false" method="get">
+      <%= hidden_field_tag :score, @score %>
+      <input type="submit" value="Play again">
+    </form>
+
+    <!-- <%= link_to "Play again", "new" %> -->
+
+    <h4 class="mt-4">Your score is <%= @score %></h4>
+  </div>
+</div>
